@@ -1,27 +1,23 @@
 window.onload = () => {
-     let places = staticLoadPlaces();
-     renderPlaces(places);
-};
-
-function staticLoadPlaces() {
-    return [
-        {
-            name: 'Magnemite',
-            location: {
-                lat: 44.496470,
-                lng: 11.320180,
-            }
-        },
-    ];
-}
-
-window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
     button.innerText = '﹖';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
+
+function staticLoadPlaces() {
+    return [
+        {
+            name: 'Pokèmon',
+            location: {
+                 // 52.255212, 6.167022
+                lat: 52.255212,
+                lng: 6.167022,
+            },
+        },
+    ];
+}
 
 var models = [
     {
